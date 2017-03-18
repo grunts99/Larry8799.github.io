@@ -1,0 +1,183 @@
+* {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #FEDCC8;
+}
+
+
+#myCanvas{
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 0;
+    height: 180;
+    width: 700;
+}
+
+
+#secret{
+    height:2500px;
+    width:100px;
+    float:left;
+    background-color:black;
+    opacity: 0.8;
+    position:fixed;
+    z-index: 1;
+  top: 0px;
+  left: -95px;
+  -webkit-transition: left 0.5s ease-out;
+  -moz-transition: left 0.5s ease-out;
+  -o-transition: left 0.5s ease-out;
+  transition: left 0.5s ease-out;
+}
+
+#secret:hover{
+  left: 0px;
+}
+
+
+#floating_button
+{
+  background-color: white;
+  border-radius: 40%;
+  color: #880000;
+  width: 70px;
+  height: 60px;
+  position: fixed;
+  border: 5px solid darkgray;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  margin-top: 40px;
+  margin-left: 5px;
+}
+#floating_button1
+{
+  background-color: white;
+  border-radius: 40%;
+  color: #880000;
+  width: 70px;
+  height: 60px;
+  position: fixed;
+  border: 5px solid darkgray;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  margin-top: 110px;
+  margin-left: 5px;
+}
+#floating_button2
+{
+  background-color: white;
+  border-radius: 40%;
+  color: #880000;
+  width: 70px;
+  height: 60px;
+  position: fixed;
+  border: 5px solid darkgray;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  margin-top: 180px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+#floating_button3
+{
+  background-color: white;
+  border-radius: 40%;
+  color: #880000;
+  width: 70px;
+  height: 60px;
+  position: fixed;
+  border: 5px solid darkgray;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  margin-top: 250px;
+  font-size: 11px;
+  margin-left: 5px;
+}
+
+
+#text{
+  font-size: 20px;
+  color: white;
+}
+
+.parallax {
+  -webkit-perspective: 100px;
+          perspective: 100px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  margin-left: -1500px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+.parallax__cover {
+  background: #2D112B;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 2000px;
+  z-index: 2;
+}
+
+.parallax__layer__0 {
+  -webkit-transform: translateZ(-300px) scale(4);
+          transform: translateZ(-300px) scale(4);
+}
+
+.parallax__layer__1 {
+  -webkit-transform: translateZ(-250px) scale(3.5);
+          transform: translateZ(-250px) scale(3.5);
+}
+
+.parallax__layer__2 {
+  -webkit-transform: translateZ(-200px) scale(3);
+          transform: translateZ(-200px) scale(3);
+}
+
+.parallax__layer__3 {
+  -webkit-transform: translateZ(-150px) scale(2.5);
+          transform: translateZ(-150px) scale(2.5);
+}
+
+.parallax__layer__4 {
+  -webkit-transform: translateZ(-100px) scale(2);
+          transform: translateZ(-100px) scale(2);
+}
+
+.parallax__layer__5 {
+  -webkit-transform: translateZ(-50px) scale(1.5);
+          transform: translateZ(-50px) scale(1.5);
+}
+
+.parallax__layer__6 {
+  -webkit-transform: translateZ(0px) scale(1);
+          transform: translateZ(0px) scale(1);
+}
